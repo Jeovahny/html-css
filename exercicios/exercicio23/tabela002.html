@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table { 
+            width: 500px;
+            border-collapse: collapse;
+        
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(160, 164, 168, 0.603);
+        }
+
+        tbody > tr:nth-child( 2n) { background-color: aqua;}
+
+        thead, tfoot {
+            background-color: lightslategray;
+            color: white;
+        }
+
+        
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    
+    <Table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+
+
+
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.411.923</td>
+
+
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.463.349</td>
+
+
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td>11.597.484</td>
+
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.466.630</td>
+
+
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.674.793</td>
+
+
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9.240.580</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td>8.777.124</td>
+            
+            </tr>
+
+            <td>Santa Catarina</td>
+            <td>7.338.473</td>
+
+            <tr>
+                <td>Goiás</td>
+                <td>7.206.589</td>
+
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <th scope="row">00000</th>
+
+
+        </tfoot>
+
+
+
+
+
+
+
+
+
+
+
+
+    </Table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
