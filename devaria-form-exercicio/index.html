@@ -7,6 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+<style>
+
+body  {
+    
+    text-align: center;
+    
+}
+
+form{
+    border: solid black;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(71, 1, 136);
+    color: rgb(184, 179, 179);
+    
+}
+
+ p{
+    text-align: start;
+    
+  
+}
+
+p#submit{
+    text-align: center;
+}
+
+label{
+    display: block;
+    
+}
+form  input  {
+    width: 90%;
+    padding: 5px 8px;
+    outline-color: greenyellow;
+    
+}
+
+form textarea{
+    width: 95%;
+    outline-color: greenyellow;
+    
+    
+}
+form > div input [type="radio"],
+form > div input [type="checkbox"]{
+    width: 25px;
+    
+
+
+}
+
+
+
+
+
+
+</style>
 
 
 <body>
@@ -16,7 +74,7 @@
             <form action="index.html">
                 <p>
 
-                    <label>Nome: </label> <input type="text" name="Nome" id="nome">
+                    <label>Nome: </label> <input type="text" name="Nome" id="nome" >
                 </p>
                 <p>
 
@@ -28,10 +86,10 @@
                     <textarea name="Comentário" id="comentario" cols="30" rows="3"></textarea>
                 </p>
 
-                <p>
+                <p id="checkbox">
                     <label>Sexo:</label>
-                    <input type="radio" name="Sexo" id="f"> <label>Feminino</label>
-                    <input type="radio" name="Sexo" id="m"> <label>Masculino</label>
+                    <input type="radio" name="Sexo" id="f"><span> <label>Feminino</label></span>
+                    <input type="radio" name="Sexo" id="m"><span> <label>Masculino</label></span>
                 </p>
 
                 <label>Aonde você conheceu a Devaria?</label>
@@ -47,9 +105,9 @@
                     <input type="checkbox" name="Aceite" value="aceite">
                     <label>Aceito receber novidades da Devaria.</label>
                 </p>
-                <p>
-                    <input type="submit" name="enviar" value="Enviar">
-                    <input type="reset" name=" Limpar" value="Limpar">
+                <p id="submit">
+                    <input type="submit" name="enviar" value="Enviar" >
+                    <input type="reset" name=" Limpar" value="Limpar" class="btn">
                 </p>
 
 
